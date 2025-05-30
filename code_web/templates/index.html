@@ -1,0 +1,142 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forest Fire Management Research</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Forest Fire and Smoke Research</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/upload">Wildfire</a></li>
+                <li><a href="/models">Model</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="card" onclick="window.location.href='/upload'">
+            <h2>Wildfire Management System</h2>
+            <p>Upload and analyze videos to detect forest fire and smoke.</p>
+        </section>
+        <section class="card" onclick="window.location.href='/models'">
+            <h2>Model Metrics</h2>
+            <p>View and sort model performance metrics.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Forest Fire Management Research. All rights reserved.</p>
+    </footer>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fire Detection - Forest Fire Management Research</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>FireVision</h1>
+            <p class="subtitle">A Wildfire and Smoke Detection System</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="content-wrapper">
+            <div class="form-section">
+                <h2>Upload Video for Analysis</h2>
+                <form id="uploadForm" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="video">Upload Video:</label>
+                        <input type="file" id="video" name="video" accept="video/*" />
+                    </div>
+                    <!-- CHANGES MADE WALA PART FOR URL VIDEO -->
+                    <div class="form-group">
+                        <label for="videoUrl">Or Enter Video URL:</label>
+                        <input type="text" id="videoUrl" name="videoUrl" placeholder="http://192.168.29.94:8080/video">
+                      </div>
+                    <!-- CHANGES MADE WALA PART FOR URL VIDEO -->
+                    <div class="form-group">
+                        <label for="sizeFactor">Resize Video (Width: 600-800 preferred):</label>
+                        <input type="number" id="sizeFactor" name="sizeFactor" value="1" min="0.1" max="2" step="0.1">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nFrames">Frames for Smoke Direction Analysis:</label>
+                        <input type="number" id="nFrames" name="nFrames" value="30" min="0" max="300" step="10">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mFrames">Frames for Fire Spread Analysis:</label>
+                        <input type="number" id="mFrames" name="mFrames" value="180" min="0" max="300" step="10">
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <label>
+                            <input type="checkbox" id="cameraStable" name="cameraStable">
+                            Is the camera stable? *(For fire & smoke direction analysis)
+                        </label>
+                    </div>
+
+                    <div class="button-group">
+                        <button type="button" id="uploadBtn" class="primary-btn">Upload Video</button>
+                        <button type="button" id="stopBtn" class="secondary-btn">Stop Processing</button>
+                    </div>
+                </form>
+            </div>
+
+            <div id="videoFrames" class="analysis-section">
+                <div class="logs-container">
+                    <p id="logs"></p>
+                </div>
+                
+                <div class="video-section">
+                    <div class="video-box motion-analysis">
+                        <h3>Motion Analysis</h3>
+                        <div class="video-container">
+                            <img id="stableFrames" alt="Motion Analysis">
+                        </div>
+                    </div>
+                    <div class="video-box fire-analysis">
+                        <h3>Fire Analysis</h3>
+                        <div class="video-container">
+                            <img id="fireAnalysis" alt="Fire Analysis">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <!-- <p>&copy; 2024 Forest Fire Management Research. All rights reserved.</p> -->
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.0/socket.io.min.js"></script>
+    <script src="{{ url_for('static', filename='/js/upload.js') }}"></script>
+
+        
+</body>
+</html>
+
+
+
+
+
+    
+
+
+
