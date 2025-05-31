@@ -145,7 +145,7 @@ We’re looking for collaborators, testers, and domain experts. Feel free to:
 
 ## 📬 Contact & Collaboration
 
-> 👤 Developed by Arnav Tumbde
+> 👤 Developed by Arnav Tumbde, Aniruddha Moharir, Anshu Bagne, Anshul Palarpwaar, Prajjwal Mohan
 > 📧 Email: [amtumbde@gmail.com](mailto:amtumbde@gmail.com)
 > 📍 Location: Nagpur, Maharashtra, India
 > 🔗 [LinkedIn](https://linkedin.com/in/arnavtumbde)
