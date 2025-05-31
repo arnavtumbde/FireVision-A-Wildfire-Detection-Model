@@ -141,7 +141,7 @@ We’re looking for collaborators, testers, and domain experts. Feel free to:
 ## 📬 Contact & Collaboration
 
 > 👤 Developed by Arnav Tumbde, Aniruddha Moharir, Anshu Bagne, Anshul Palarpwaar, Prajjwal Mohan
-> 📧 Email: [amtumbde@gmail.com](mailto:amtumbde@gmail.com)
+> 📧 Email: [amtumbde@gmail.com](mailto:amtumbde@gmail.com), [mohariraa@rknec.edu](mailto:mohariraa@rknec.edu), 
 > 📍 Institute: Shri Ramdeobaba College of Engineering and Management, Nagpur, Maharashtra, India
 > 🔗 [LinkedIn](https://linkedin.com/in/arnavtumbde)
 
