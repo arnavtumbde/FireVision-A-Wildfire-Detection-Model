@@ -105,8 +105,12 @@ firevision/
 
 ---
 
-## 📊 Example Use Cases
+## 🌍 Future Scope
 
+* Integrate cloud-based deployment (AWS/GCP)
+* Community app for reporting and alerts
+* Fire severity grading via YOLOv8 + frame intensity
+* Drone stream integration and 24x7 monitoring
 * 🌲 Forest department wildfire surveillance
 * 🏠 Smart city disaster monitoring
 * 🛰️ Ground-level early warning systems
@@ -114,22 +118,13 @@ firevision/
 
 ---
 
-## 🌍 Future Scope
-
-* Integrate cloud-based deployment (AWS/GCP)
-* Community app for reporting and alerts
-* Fire severity grading via YOLOv8 + frame intensity
-* Drone stream integration and 24x7 monitoring
-
----
-
 ## 🧠 Built With
 
 * 🔍 **OpenCV**
 * 📦 **TensorFlow / Keras**
-* 🎥 **Streamlit**
-* 🧪 **EuroSAT Dataset**
-* 🧰 **NumPy, Matplotlib, Seaborn**
+* 🎥 **HTML,CSS,JS**
+* 🧪 **Flask + FastAPI**
+* 🧰 **NumPy, Matplotlib, Seaborn - for visualisations in analysis.py**
 
 ---
 
@@ -147,7 +142,7 @@ We’re looking for collaborators, testers, and domain experts. Feel free to:
 
 > 👤 Developed by Arnav Tumbde, Aniruddha Moharir, Anshu Bagne, Anshul Palarpwaar, Prajjwal Mohan
 > 📧 Email: [amtumbde@gmail.com](mailto:amtumbde@gmail.com)
-> 📍 Location: Nagpur, Maharashtra, India
+> 📍 Institute: Shri Ramdeobaba College of Engineering and Management, Nagpur, Maharashtra, India
 > 🔗 [LinkedIn](https://linkedin.com/in/arnavtumbde)
 
 ---
